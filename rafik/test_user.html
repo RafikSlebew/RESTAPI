@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER API TEST</title>
+</head>
+<body>
+    <h1>Get All Users</h1>
+        <form action="user-endpoint.php" method="post" target="_blank">
+            Request <input type="text" name="req" value="get-all" readonly/><br>
+            <input type="submit" value="Get"/>
+        </form>
+    <h1>Get User By Email</h1>
+        <form action="user-endpoint.php" method="post" target="_blank">
+            Request <input type="text" name="req" value="get-email" readonly/><br>
+            Email <input type="email" name="email" required/><br>
+            <input type="submit" value="Get"/>
+        </form>
+    <h1>Get User By ID</h1>
+        <form action="user-endpoint.php" method="post" target="_blank">
+            Request <input type="text" name="req" value="get-id" readonly/><br>
+            Email <input type="text" name="id" required/><br>
+            <input type="submit" value="Get"/>
+        </form>
+    <h1>Create New User</h1>
+        <form action="user-endpoint.php" method="post" target="_blank">
+            Request <input type="text" name="req" value="create" readonly/><br>
+            Name <input type="text" name="name" required/><br>
+            Email <input type="email" name="email" required/><br>
+            Password <input type="text" name="password" required/><br>
+            <input type="submit" value="Create"/>
+        </form>
+    <h1>Update</h1>
+        <form action="user-endpoint.php" method="post" target="_blank">
+            Request <input type="text" name="req" value="update" readonly/><br>
+            ID <input type="text" name="id" required/><br>
+            Name <input type="text" name="name" required/><br>
+            Email <input type="email" name="email" required/><br>
+            Password <input type="text" name="password"/><br>
+            <input type="submit" value="Update"/>
+        </form>
+    <h1>Delete</h1>
+        <form action="user-endpoint.php" method="post" target="_blank">
+            Request <input type="text" name="req" value="delete" readonly/><br>
+            ID <input type="text" name="id" required/>
+            <input type="submit" value="Delete"/>
+        </form>
+</body>
+</html>
